@@ -1,4 +1,4 @@
-The xtemplating system
+The xtemplating system for mailchimp
 
 This templating is based on the foundation mail templates:
 
