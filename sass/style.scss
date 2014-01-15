@@ -1,0 +1,177 @@
+@charset "UTF-8";
+
+/**
+ * Style file
+ *
+ * This file is compiled into style.css
+ */
+@import 'base/variables';
+/* ---------- Compass Extensions ---------- */
+
+
+/* ---------- Import base ---------- */
+@import 'base/normalize';
+@import 'base/functions';
+@import 'base/mixins';
+@import 'base/extendables';
+@import 'base/typography';
+
+/* ---------------------------------------------------
+		RESPONSIVENESS
+		Nuke it from orbit. It's the only way to be sure.
+------------------------------------------------------ */
+/* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+.container {
+  display:block!important;
+  max-width:600px!important;
+  margin:0 auto!important; /* makes it centered */
+  clear:both!important;
+}
+
+/* This should also be a block element, so that it will fill 100% of the .container */
+.content {
+  padding:15px;
+  max-width:600px;
+  margin:0 auto;
+  display:block;
+}
+
+/* Let's make sure tables in the content area are 100% wide */
+.content table { width: 100%; }
+
+/* Odds and ends */
+.column {
+  width: 290px;
+  float:left;
+  display: block;
+  margin-right: 20px;
+}
+.column.omega{
+  margin-right: 0;
+}
+.column tr td { padding: 15px; }
+.column-wrap {
+  padding:0!important;
+  margin:0 auto;
+  max-width:600px!important;
+}
+.column table { width:100%;}
+
+/* Be sure to place a .clear element after each set of columns, just to be safe */
+.clear { display: block; clear: both; }
+/* -------------------------------------
+		STYLING
+------------------------------------- */
+table .content a,
+table .container a{
+  text-decoration: underline;
+  color: $mainColor !important;
+  &:visited,
+  &:active,
+  &:hover{
+    text-decoration: underline;
+    color: $mainColor !important;
+  }
+}
+
+.mainColor{
+  color: #bf1e2e;
+}
+.center{
+  text-align: center;
+}
+/* -------------------------------------
+		HEADER
+------------------------------------- */
+table.head-wrap {
+  padding-top: 30px;
+  width: 100%;
+}
+.header{
+
+  .content{
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    position: relative;
+    background: $mainColor;
+    padding: 20px 10px;
+  }
+}
+
+/* -------------------------------------
+		TITLE
+------------------------------------- */
+table.title-wrap { width: 100%;}
+.title .content h1{
+  font-size: 28px;
+  text-align: center;
+}
+
+/* -------------------------------------
+		POSTCARD
+------------------------------------- */
+table.postcard-wrap { width: 100%;}
+.postcard .content{
+  padding: 0;
+  min-height: 100px;
+  background: $white;
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+}
+/* -------------------------------------
+		BODY
+------------------------------------- */
+table.body-wrap {
+  width: 100%;
+  .container{
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+  }
+  .content{
+    background: $white;
+  }
+}
+
+/* -------------------------------------
+		FOOTER
+------------------------------------- */
+table.footer-wrap { width: 100%;	clear:both!important;
+}
+.footer-wrap .container td.content  p { border-top: 1px solid rgb(215,215,215); padding-top:15px;}
+.footer-wrap .container td.content p {
+  font-size:10px;
+  font-weight: bold;
+}
+.footer-wrap{
+  text-align: center;
+  .unsubcribe a{
+    font-size:11px;
+    color: $base-text-color !important;
+  }
+}
+
+/* -------------------------------------
+		STYLE
+------------------------------------- */
+
+.border{
+  border: 1px solid black;
+}
+
+/* -------------------------------------------
+		PHONE
+		For clients that support media queries.
+		Nothing fancy.
+-------------------------------------------- */
+@media only screen and (max-width: 600px) {
+
+  a[class="btn"] { display:block!important; margin-bottom:10px!important; background-image:none!important; margin-right:0!important;}
+
+  div[class="column"] { width: auto!important; float:none!important;}
+
+  table.social div[class="column"] {
+    width:auto!important;
+  }
+}

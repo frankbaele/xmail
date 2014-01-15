@@ -1,0 +1,9 @@
+{
+  "API_URL": "'https://example.litmus.com/",
+  "API_USERNAME": "username",
+  "API_PASSWORD": "password",
+  "S3_BUCKET": "bucket",
+  "S3_ACCESS_KEY_ID" : "access_key_id", 
+  "S3_SECRET_ACCESS_KEY" : "secret_access_key",
+  "FROM_EMAIL_ADDRESS": "default@email.com"
+}

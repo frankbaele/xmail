@@ -1,0 +1,14 @@
+{
+  "name": "panama",
+  "version": "0.0.1",
+  "Dependencies": {
+    "grunt": "~0.4.1",
+    "grunt-open": "~0.2.0",
+    "grunt-contrib-connect": "~0.5.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-nodemailer": "~0.1.2",
+    "node-neat": "~1.1.0",
+    "grunt-sass": "~0.9.0",
+    "grunt-juice-email": "~0.1.1"
+  }
+}

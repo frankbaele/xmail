@@ -1,0 +1,41 @@
+$legacy_support_for_ie: false;
+$normalize_headings: true;
+
+/* Colors */
+$background: #fff;
+$color: #000;
+$mainColor: #bf1e2e;
+$white: #fff;
+$borderColor: $color;
+$base-text-color: $color;
+$base-selected-text-color: invert($base-text-color);
+$base-selected-text-background-color: $base-text-color;
+$base-link-color: #58b8d1;
+$base-link-hover-color: #DF006E;
+
+/* Font stuff */
+
+$base-font-family: Helvetica, Arial, sans-serif;
+$normalized_font_family: sans-serif;
+
+$base-font-size: 16px;
+$base-line-height: 24px;
+
+$h1_font_size: 2em;
+$h2_font_size: 1.5em;
+$h3_font_size: 1.17em;
+$h4_font_size: 1em;
+$h5_font_size: 0.83em;
+$h6_font_size: 0.75em;
+
+$h1_margin: 0.67em 0;
+$h2_margin: 0.83em 0;
+$h3_margin: 1em 0;
+$h4_margin: 1.33em 0;
+$h5_margin: 1.67em 0;
+$h6_margin: 2.33em 0;
+
+/* Breakpoints */
+
+$breakpoint_1: 35em;
+$breakpoint_2: 55em;
